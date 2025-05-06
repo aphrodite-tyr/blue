@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@plugin "daisyui";
+
+body {
+    @apply font-casual2;
+  }
+
+@layer utilities {
+    .text-gradient {
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(to bottom left, #FFFFFF, #f43f5e);
+    }
+  }
+
+
+  .custom-bg-size {
+    background-size: cover;
+  }
+  
+  @media (min-width: 1280px) {
+    .custom-bg-size {
+      background-size: 40% !important;
+    }
+  }
+  
